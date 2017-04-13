@@ -12,8 +12,8 @@
 /hooks/
 !/hooks/ALL_EVENTS/.placeholder
 !/hooks/.placeholder
-/doc/mediawiki-online.d
-!/doc/mediawiki-online.d/.placeholder
+/doc/html/
+!/doc/html/
 /mw-dumps/
 !/mw-dumps/.placeholder
 /mw-dumps-download/
