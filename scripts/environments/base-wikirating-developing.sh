@@ -13,7 +13,7 @@ if [[ -f $WTL_WORKING_DIR/docker-images.conf ]] ; then
     . $WTL_WORKING_DIR/docker-images.conf
 fi
 
-export WTL_HELPER_CREATE="single-node-easylink-develop"
+export WTL_HELPER_CREATE="single-node-wikirating-develop"
 export WTL_HELPER_START="single-node"
 export WTL_HELPER_RESTORE_BACKUP="single-node"
 export WTL_HELPER_DO_BACKUP="single-node"
