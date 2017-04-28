@@ -46,7 +46,7 @@ echo $$ > $WTL_LOCK_FILE
 
 case $1 in
     help)
-        cat doc/wtlh-user-guide/instance-doc.md
+        echo "Please look in the doc/ directory"
     ;;
     create)
         $WTL_SCRIPTS/create.sh
