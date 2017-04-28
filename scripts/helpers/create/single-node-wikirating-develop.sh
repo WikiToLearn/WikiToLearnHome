@@ -11,7 +11,6 @@ if [[ "$WTL_PRODUCTION" == "1" ]] ; then
 fi
 
 $WTL_SCRIPTS"/helpers/create/commons/single-node-pre.sh"
-$WTL_SCRIPTS"/helpers/create/commons/single-node-ocg.sh"
 
 if ! docker inspect ${WTL_INSTANCE_NAME}-websrv &> /dev/null ; then
 
@@ -30,7 +29,6 @@ if ! docker inspect ${WTL_INSTANCE_NAME}-websrv &> /dev/null ; then
         --link ${WTL_INSTANCE_NAME}-mathoid:mathoid \
         --link ${WTL_INSTANCE_NAME}-parsoid:parsoid \
         --link ${WTL_INSTANCE_NAME}-restbase:restbase \
-        --link ${WTL_INSTANCE_NAME}-ocg:ocg \
         --add-host=wikirating:`docker run -ti --rm debian:8 /sbin/ip route | awk '/default/ { print  $3}'` \
         $WTL_DOCKER_WEBSRV
 

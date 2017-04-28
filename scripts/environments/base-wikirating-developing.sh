@@ -14,7 +14,7 @@ if [[ -f $WTL_WORKING_DIR/docker-images.conf ]] ; then
 fi
 
 export WTL_HELPER_CREATE="single-node-wikirating-develop"
-export WTL_HELPER_START="single-node"
+export WTL_HELPER_START="single-node-no-ocg"
 export WTL_HELPER_RESTORE_BACKUP="single-node"
 export WTL_HELPER_DO_BACKUP="single-node"
 export WTL_HELPER_MAKE_READONLY="single-node"
