@@ -34,7 +34,7 @@ If you are using Windows, OSX or any other non OS based on a kernel non compatib
 
 ## WikiToLearnHome Development
 
-* [Conventions](wtlhome/dev/conventions.md)
-* [Constants](wtlhome/dev/const-doc.md)
-* [load-libs.sh](wtlhome/dev/load-libs-doc.md)
-* [Recurring code](wtlhome/dev/recurring.md)
+* [Conventions](wtlhomedev/conventions.md)
+* [Constants](wtlhomedev/const-doc.md)
+* [load-libs.sh](wtlhomedev/load-libs-doc.md)
+* [Recurring code](wtlhomedev/recurring.md)
