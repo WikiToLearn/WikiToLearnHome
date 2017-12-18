@@ -90,7 +90,7 @@ This is the command to execute the first time (or if you delete all stuff):
 ```
 
 Now you can work on your local instance of WikiToLearn and see your work
-on [www.tuttorotto.biz](www.tuttorotto.biz)
+on [www.local.wikitolearn-test.org](www.local.wikitolearn-test.org)
 
 ### Usefull commands
 

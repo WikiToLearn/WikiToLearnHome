@@ -59,7 +59,7 @@ Optional
 
 - `-e|--environtment <env>`: This parameter is used to set the environment, from the list of available environments. According to the needs of the user, it is possible to set up a different characteristics, such as the absence of OCG. The available environtments will be discussed later.
 
-- `--domain <domain>`: This parameter is used to set the domain to access the local instance. This value is set to `tuttorotto.biz` by default.
+- `--domain <domain>`: This parameter is used to set the domain to access the local instance. This value is set to `local.wikitolearn-test.org` by default.
 
 - `--branch <branch>`: This parameter is used to set the WTL repo branch that you want to switch to. This value is set to `master` by default.
 

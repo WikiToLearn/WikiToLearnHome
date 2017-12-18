@@ -18,7 +18,7 @@ This setup requires Docker x64 version on Linux.
 
 ## Network stuff
 
-WikiToLearn has a complex layout because is a multi-domain website, this is why we have the `tuttorotto.biz` domain.
+WikiToLearn has a complex layout because is a multi-domain website, this is why we have the `local.wikitolearn-test.org` domain.
 
 This domain si pointed to 127.0.0.1 (the local pc), if you have the WikiToLearn system running on a VM is like to have the system running on another PC.
 
@@ -28,6 +28,6 @@ Another solution, with virtualbox, is to use the NAT to forward port 80 and 443 
 
 Another solution is to use ssh port tunneling, so you can spin up your VM, ssh into the guest os and use all ssh magic stuff to forward the traffic to the VM.
 
-Another possible solution is to use the `hosts` file to bind all `tuttorotto.biz` sub-domains to the VM.
+Another possible solution is to use the `hosts` file to bind all `local.wikitolearn-test.org` sub-domains to the VM.
 
 Those domains can be changed quite frequently and this is why we don't endorse this solution

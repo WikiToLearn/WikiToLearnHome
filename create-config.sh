@@ -73,7 +73,7 @@ fi
 # default value for variabile
 export WTL_PRODUCTION=0
 export WTL_ENV="base"
-export WTL_DOMAIN_NAME='tuttorotto.biz'
+export WTL_DOMAIN_NAME='local.wikitolearn-test.org'
 export WTL_AUTO_COMPOSER=1
 export WTL_BRANCH_AUTO_CHECKOUT=1
 export WTL_BRANCH='master'
