@@ -15,7 +15,7 @@ fi
 . ./load-libs.sh
 
 if [[ ! -f ${WTL_CERTS}/wikitolearn.crt ]] && [[ ! -f ${WTL_CERTS}/wikitolearn.key ]] ; then
-    image="wikitolearn/local-ca:0.2"
+    image="wikitolearn/local-ca:0.3"
 
     docker pull $image
 
