@@ -35,7 +35,7 @@ if ! docker inspect ${WTL_INSTANCE_NAME}-websrv &> /dev/null ; then
         $WTL_DOCKER_WEBSRV
 
     wtl-event CERTS_COPY
-    if ! docker inspect ${WTL_INSTANCE_NAME}-websrv &> /dev/null ; then
+    if docker inspect ${WTL_INSTANCE_NAME}-websrv &> /dev/null ; then
         TMPDIR=`mktemp -d`
         chmod 700 $TMPDIR
         mkdir $TMPDIR/certs
