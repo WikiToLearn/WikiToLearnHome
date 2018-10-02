@@ -89,7 +89,12 @@ if [[ "$NEW_WTL_INSTANCE_NAME" != "$OLD_WTL_INSTANCE_NAME" ]] ; then
     wtl-event RELEASE_PROCEDURE_BACKUP_SELECTED "$BACKUPDIR"
     $WTL_SCRIPTS/backup-restore.sh "$BACKUPDIR"
     $WTL_SCRIPTS/update-db.sh
-    $WTL_SCRIPTS/mw-import-struct-wikipages.sh
+    RETRY=0
+    while ! $WTL_SCRIPTS/mw-import-struct-wikipages.sh && [[ $RETRY -lt 10 ]]
+    do
+      sleep 1
+      RETRY=$(($RETRY+1))
+    done
     $WTL_SCRIPTS/unuse-instance.sh
     $WTL_SCRIPTS/use-instance.sh
 
