@@ -32,9 +32,13 @@ else
     do
         wtl-event WAITING_FOR_MYSQL_INFO
         sleep 1
+        docker start ${WTL_INSTANCE_NAME}-mysql
     done
     docker cp $WTL_CONFIGS_DIR/mysql-root-password.cnf ${WTL_INSTANCE_NAME}-mysql:/root/.my.cnf
     wtl-event MYSQL_IS_UP
+
+    docker start ${WTL_INSTANCE_NAME}-mysql
+    sleep 2
 
     wtl-event MYSQL_GRANT_PRIVS_TO_USER
     echo "GRANT ALL PRIVILEGES ON * . * TO 'wtlmysql'@'%' IDENTIFIED BY '$WTLMYSQL_PWD';" | docker exec -i ${WTL_INSTANCE_NAME}-mysql mysql
@@ -42,6 +46,9 @@ else
         wtl-event MYSQL_AUTH_TEST_FAIL
         exit 1
     fi
+
+    docker start ${WTL_INSTANCE_NAME}-mysql
+    sleep 2
 
     wtl-event MAKE_USERNAME_AND_PASSWORD_PHP_FILE $WTL_CONFIGS_DIR
     {
